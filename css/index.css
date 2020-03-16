@@ -1,3 +1,85 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 /* Minor change just to push */
+
+/*********************************** RESET ****************************/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid grey;
+}
+/*********************************GENERAL STYLES***************************/
+body {
+  line-height: 2;
+  font-family: "Roboto Mono", monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+}
+section {
+  padding: 4% 0;
+}
+/*********************************Header Styles**************************/
+header {
+  height: 60vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 10%;
+}
+.links {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.titleParent {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*********************************About Section Styles**************************/
+#about h2 {
+  text-align: center;
+}
+.parent {
+  display: flex;
+  justify-content: space-around;
+}
+.parent div {
+  width: 25%;
+}
+/*********************************Footer Styles**************************/
+#contact {
+  display: flex;
+}
+.left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.left img {
+  width: 50%;
+}
+.right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right div {
+  width: 60%;
+}
