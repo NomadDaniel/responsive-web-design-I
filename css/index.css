@@ -461,3 +461,61 @@ footer {
   /* border: 2px solid red; */
   width: 100%;
 }
+
+/*==============Media Querries start here============= */
+
+/*tablet*/
+@media (max-width: 800px) {
+  /* adjusting nav and logo to colomn */
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    justify-content: center;
+  }
+  div.logo {
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .top-content {
+    flex-direction: column;
+    margin-top: 10%;
+    /* scale: 0.5; */
+  }
+
+  .circle-image {
+    display: none;
+  }
+
+  /* .top-content-text {
+    font-size: 10rem;
+    border: 1px solid red;
+  } */
+}
+
+/*phone*/
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+  }
+  .links {
+    width: 100%;
+  }
+  #contact {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .right div {
+    width: 80%;
+  }
+  .left img {
+    width: 80%;
+  }
+}
