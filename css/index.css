@@ -467,6 +467,9 @@ footer {
 /*tablet*/
 @media (max-width: 800px) {
   /* adjusting nav and logo to colomn */
+  .container {
+    width: 95%;
+  }
   header {
     width: 100%;
     display: flex;
@@ -488,34 +491,71 @@ footer {
   .circle-image {
     display: none;
   }
-
-  /* .top-content-text {
-    font-size: 10rem;
-    border: 1px solid red;
-  } */
 }
 
 /*phone*/
 @media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
   nav {
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
+    /* border: 1px solid black; */
   }
-  .links {
+
+  nav a {
     width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 6%;
   }
-  #contact {
+
+  .middle-content {
     flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 90%;
   }
-  .left,
-  .right {
+
+  .left-paragraph {
     width: 100%;
+    padding: 5%;
   }
-  .right div {
-    width: 80%;
+
+  .left-paragraph h2 {
+    margin-bottom: 5%;
   }
-  .left img {
-    width: 80%;
+
+  .right-paragraph {
+    width: 100%;
+    padding: 5%;
   }
-}
+
+  .right-paragraph h2 {
+    margin-bottom: 5%;
+  }
+  .bottom-content {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 90%;
+  }
+  .services {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .product {
+    width: 100%;
+    padding: 5%;
+  }
+  
+  .vision {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .contact {
+    padding: 5%
+  }
